@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,3 +11,7 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# Handmade-Craft-E-Commerce-Website
+- User-friendly homepage with craft product listings - Product details page with image, price, and description - Add to cart &amp; view cart functionality - Checkout form (shipping details simulation) - Admin panel to manage craft products (CRUD operations)
+>>>>>>> 98e9a2b10a092e4677c54ecf1421ed1124c98376
