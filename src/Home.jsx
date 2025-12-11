@@ -128,15 +128,15 @@
         <h2 className=" ms-6 m-auto  text-amber-900 text-2xl lg:text-4xl lg:text-red-950 sm:text-2xl sm:text-amber-50 ">Hand made craft</h2>
 
         {/* login button */}
-        <button onClick={() => setShowLogin(!showLogin)} className="ring-2 ring-gray-800/80  m-auto rounded-xl mt-5 w-10 h-3 text-sm pb-7 top-2 left-60 lg:w-20 py-1 font-sans  lg:text-xl absolute lg:top-5 lg:pb-8 lg:left-220 cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">Login</button>
+        <button onClick={() => setShowLogin(!showLogin)} className="ring-2 ring-gray-800/80  m-auto rounded-xl mt-5 w-10 h-2 text-sm pb-6 top-2 left-60 lg:w-20 py-1 font-sans  lg:text-xl absolute lg:top-5 lg:pb-8 lg:left-220 cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">Login</button>
         {showLogin && (
-          <div className="h-31 ms-5 right-20 top-15" >
-            <form className="ring-3 rounded-xl ring-gray-800/80 w-35 h-30 ms-5 right-3 top-20.5  lg:w-50 lg:h-45 lg:text-3xl lg:p-4 lg:pb-10 absolute lg:right-60 lg:top-6 lg:mt-15  shadow-2xl shadow-amber-800 ">
+          <div className="h-35 ms-5 right-20 top-15" >
+            <form className="ring-3 rounded-xl ring-gray-800/80 w-35 h-35 ms-5 right-3 top-20.5  lg:w-50 lg:h-45 lg:text-3xl lg:p-4 lg:pb-10 absolute lg:right-60 lg:top-6 lg:mt-15  shadow-2xl shadow-amber-800 ">
               <input type="text" placeholder="Enter your username"  className="text-sm w-33 ms-1 mt-2 ps-1 pt-2 lg:p-2 lg:w-40 lg:mt-0"/>
               <br />
               <br />
               <input type="password" placeholder="Enter your password"  className="text-sm w-33 ms-1 mt-2 ps-1 pt-2 lg:p-2 lg:w-40 lg:mt-0 lg:absolute lg:top-20"/>
-              <button type="submit" onClick={showAlert} className="ring-2 ring-gray-800/80 m-auto rounded-xl text-sm mt-2 h-5.5 ms-9  lg:w-20 lg:h-10 lg:py-1 font-sans lg:text-lg lg:mt-8.5 cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">
+              <button type="submit" onClick={showAlert} className="ring-2 ring-gray-800/80 m-auto rounded-xl text-sm mt-2 w- h-6 ms-9  lg:w-20 lg:h-10 lg:py-1 font-sans lg:text-lg lg:mt-8.5 cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">
                 Submit
               </button>
             </form>
@@ -144,13 +144,13 @@
         )}
 
         {/* cart button */}
-        <button  onClick={() => setShowCart(!showCart)} className="ring-2 ring-gray-800/80  m-auto rounded-xl mt-5 w-10 h-3 text-sm pb-7 top-2 left-60 lg:w-20 py-1 font-sans  lg:text-xl absolute lg:top-5 lg:pb-8 lg:left-260 cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">
+        <button  onClick={() => setShowCart(!showCart)} className="ring-2 ring-gray-800/80  m-auto rounded-xl mt-5 w-10 h-8 text-sm pb-10 top-2 left-75 lg:w-20 py-1 font-sans  lg:text-xl absolute lg:top-5 lg:pb-8 lg:left-260 cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">
           Cart ({cart.length})
         </button>
 
         {/* cart div toggle */}
         {showCart && (
-          <div className="ring-3 rounded-xl ring-gray-800/80 w-35 h-30 ms-5 right-3 top-20.5  lg:w-40 lg:h-25 lg:pt-2  lg:text-lg ps-6.5 lg:pb-10 absolute lg:right-15 lg:top-6 lg:mt-15  shadow-2xl shadow-amber-800 ">
+          <div className="ring-3 rounded-xl ring-gray-800/80 w-35 h-25 ms-5 right-3 top-20.5  lg:w-40 lg:h-25 lg:pt-2  lg:text-lg ps-6.5 lg:pb-10 absolute lg:right-15 lg:top-6 lg:mt-15  shadow-2xl shadow-amber-800 ">
             <h2>🛒 Your Cart</h2>
             {cart.length === 0 ? (
               <p>No items yet</p>
@@ -166,7 +166,7 @@
             <h3>
               Total: Rs {cart.reduce((total, item) => total + item.price, 0)}
             </h3>
-            {cart.length > 0 &&  <button onClick={() => handlePayment(total)} className="ring-2 ring-gray-800/80 m-auto rounded-xl text-sm mt-4 h-10 ms-1 me-5   lg:w-45 lg:mt-5 lg:ms-1 lg:absolute lg:left-0  font-sans lg:text-lg  cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">Proceed to Payment</button>}
+            {cart.length > 0 &&  <button onClick={() => handlePayment(total)} className="ring-2 ring-gray-800/80 m-auto rounded-xl text-sm mt-10 h-10 ms-1 me-5   lg:w-45 lg:mt-5 lg:ms-1 lg:absolute lg:left-0  font-sans lg:text-lg  cursor-pointer text-gray-800 text-serif font-bold hover:shadow-xl/30 ">Proceed to Payment</button>}
           </div>
         )}
 
@@ -174,7 +174,7 @@
       
 
         <div className=" w-290  h-110 my-5 ms-1 p-0 lg:grid lg:grid-cols-2 lg:gap-10 ">
-          <img src={allover} className="w-80 ms-6  lg:ms-20 lg:w-120 lg:me-10 lg:mt-25 mx-20 my-15 rounded-sm border-3 border-red-950 shadow-2xl shadow-amber-800 " />
+          <img src={allover} className="w-80 ms-6 mt-50  lg:ms-20 lg:w-120 lg:me-10 lg:mt-25 mx-20 my-15 rounded-sm border-3 border-red-950 shadow-2xl shadow-amber-800 " />
           <p className=" text-red-950 ms-2.5 me-3  w-85 text-xl font-serif text-justify lg:w-150 lg:mt-40 lg:pr-2 ">
             Discover unique handmade crafts crafted with love and care.
             Each product reflects traditional skills and modern creativity.
@@ -185,25 +185,25 @@
           </p>
         </div>
 
-        <h3 className=" text-center m-auto text-4xl text-red-950 mt-45 lg:text-center lg:mt-10">Our Product</h3> 
+        <h3 className=" text-center m-auto text-4xl text-red-950 mt-45 lg:text-center lg:mt-10 ">Our Product</h3> 
         <div >
           {products.map((product, index) => (
-            <div className="  ms-2.5 me-2.5 h-160 my-10 rounded-2xl lg:h-60 border-2 border-amber-800 lg:my-4" key={index} >
-              <img src={product.img} alt={product.name} className="w-50 mx-20 m-auto my-7 rounded-2xl border-3 lg:w-60 lg:ms-15 border-red-950 shadow-2xl shadow-amber-800" />
-              <h1 className="text-3xl  text-red-950 font-serif  text-center mt-0 lg:mt-10 ">{product.name}</h1>
-              <p className="text-xl/8 text-justify mt-2 ms-2.5 me-2.5 text-red-950  font-serif lg:w-200 lg:ms-100 lg:my-2 lg:mt-10 ">{product.desc}</p>
-              <h2 className="text-2xl  text-red-950 font-serif  mt-3 text-center font-bold lg:mt-10">Price Rs : {product.price}</h2>
-              <button onClick={() => addToCart(product)} className="ring-2 ring-gray-800/80 mt-10 ms-25  m-auto rounded-xl w-40 h-12 font-extrabold px-3 font-sans text-lg   cursor-pointer text-gray-800 text-serif shadow-xl/30 hover:shadow-xl/30 ">Add to cart</button>
+            <div className="  ms-2.5 me-2.5 h-160 my-10 rounded-2xl  border-2 border-amber-800 lg:grid lg:grid-rows-1 pt-2 pb-5 lg:h-70" key={index} >
+              <img src={product.img} alt={product.name} className="w-50 mx-20 m-auto my-7 rounded-2xl border-3 lg:w-70 lg:ms-15 border-red-950 shadow-2xl shadow-amber-800" />
+              <h1 className="text-3xl  text-red-950 font-serif  text-center mt-0 lg:text-center lg:mt-0 ">{product.name}</h1>
+              <p className="text-xl/8 text-justify mt-2 ms-2.5 me-2.5 text-red-950  font-serif lg:w-180 lg:ms-100 lg:mt-3 ">{product.desc}</p>
+              <h2 className="text-2xl  text-red-950 font-serif  mt-3 text-center font-bold lg:mt-2 lg:text-xl">Price Rs : {product.price}</h2>
+              <button onClick={() => addToCart(product)} className="ring-2 ring-gray-800/80 mt-10 ms-25  m-auto rounded-xl w-40 h-12 font-extrabold px-3 font-sans text-lg   cursor-pointer text-gray-800  text-serif shadow-xl/30 lg:ms-150 lg:mt-2  hover:shadow-xl/30  ">Add to cart</button>
             </div>
           ))}
         </div>
 
         <div className="footer">
           <h1 className="  m-auto text-6xl text-red-950 text-center ">Contact</h1>
-            <h3 className="m-auto text-red-950 mt-10 ms-5 text-4xl text-left">KAIVINAI</h3>
-            <p  className="m-auto text-red-950 mt-6 ms-5 me-2 text-2xl">Handmade with ❤️ | Supporting Local Artisans</p>
+            <h3 className="m-auto text-red-950 mt-10 ms-5 text-4xl text-left lg:ms-20 lg:text-4xl">KAIVINAI</h3>
+            <p  className="m-auto text-red-950 mt-6 ms-5 me-2 text-2xl lg:ms-20">Handmade with ❤️ | Supporting Local Artisans</p>
         
-              <div className=" m-auto mt-10 me-2 ms-3 text-xl/10 text-red-950  font-light">
+              <div className=" m-auto mt-10 me-2 ms-3 text-xl/10 text-red-950  font-light lg:ms-20 lg:grid lg:grid-cols-3 lg:font-bold">
                   <p>📞 Phone: +91 98765 43210</p>
                   <p>📧 Email: support@kaivinai.com</p>
                   <p>📍 Location: Trichy, Tamil Nadu</p>
